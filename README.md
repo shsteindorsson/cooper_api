@@ -6,7 +6,7 @@
 **Front End:** React v.16.10.2, Semantic UI, CSS  
 **Back End:** Rails 5.2.0  
 **Testing frameworks:** RSpec  
-**Deployed at:** [![Netlify Status](https://api.netlify.com/api/v1/badges/1746feec-8243-480e-8a58-1bbc5c106f26/deploy-status)](https://app.netlify.com/sites/cooper-clarissa-sverrir/deploys)  and [Heroku](https://www.heroku.com/).  
+**Deployed at:** [![Netlify Status](https://api.netlify.com/api/v1/badges/1746feec-8243-480e-8a58-1bbc5c106f26/deploy-status)](https://app.netlify.com/sites/cooper-clarissa-sverrir/deploys)  and [Heroku](https://clarissa-sverrir-cooper.herokuapp.com/).  
 
 ## The code   
 This repository contains our solution to the server side of the Cooper Challenge. Our respective repositories for the Cooper Client side built in React can be found [here](https://github.com/clalil/Cooper-Challenge-Client) and [here](https://github.com/shsteindorsson/cooper_client).
@@ -62,13 +62,14 @@ In this project the calculation is performed on the client-side.
 ### What are the pros and cons of client-side processing/calculation ?
 
 #### Pros
+- It can, under some circumstances, mean more processing power
 - It makes scaling easier because computational load is not increased with each new user
-  - only increases storage but does not increase computational load on server
-  - hence, less server-cost
+  - Only increases storage but does not increase computational load on server
+  - Hence, less server-cost
 
 #### Cons
-- client-side resources will be more of an issue
-  - f.ex. hardware capabilities and software compatibility on client-side
-- calculation can not be written in any language or framework without it affecting the client-side
-- with server-side computation, more of the debugging is focused on a single target rather than, possibly, multiple client-side scenarios
+- Client-side resources can be more of an issue
+  - F.ex. hardware capabilities and software compatibility on client-side
+- Software (calculation) can not be written in any language or framework without it affecting the client-side
+- With server-side computation, more of the debugging is focused on a single target rather than, possibly, multiple client-side scenarios
 - Security, some processing should never be done client-side (banking f.ex.)
