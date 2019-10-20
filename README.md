@@ -20,6 +20,10 @@ This repository contains our solution to the server side of the Cooper Challenge
 ### Setup   
 To test this application you need to fork it to your own GitHub account and clone it to your local workspace.  
 
+To install all of the dependencies:  
+```
+$ bundle  
+```
 To create a new database:  
 ```
 $ rails db:create db:migrate  
